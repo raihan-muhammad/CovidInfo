@@ -1,0 +1,95 @@
+// Font Face
+
+// @font-face {
+//     font-family: "poppins";
+//     src: url("../fonts/Poppins-Regular.ttf");
+// }
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "poppins";
+    overflow-x: hidden;
+}
+
+// Color Variable
+$primary-color: #2988FF;
+$secondary-color: #ffffff;
+
+// Animation Section
+@keyframes bawah {
+    0% {
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// Responsive
+
+@media (max-width: 1300px) {
+
+    html {
+        font-size: 8px;
+    }
+
+    .header {
+        height: 70rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 8px;
+    }
+
+    .header {
+        padding: 2rem 5rem;
+        height: 55rem;
+
+        &__covid-text {
+            font-size: 6rem;
+        }
+    }
+
+    .main {
+        padding: 2rem 5rem;
+
+        &__flag-country {
+            margin: 5rem 0 0 5.5rem;
+        }
+
+        &__corona-info {
+            padding: 2rem 0;
+        }
+
+        &__indo-text {
+            margin-left: 2.6rem;
+        }
+
+        &__emot {
+            padding: 0;
+
+            &__react-icon {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+}

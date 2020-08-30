@@ -1,0 +1,38 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba(41, 136, 255, 0.8), rgba(39, 189, 236, 0.8));
+    padding: 2rem 10rem;
+
+    @mixin fontSizeNav {
+        font-size: 1.8rem;
+        color: $secondary-color;
+    }
+
+    &__primary-text {
+        @include fontSizeNav();
+        text-decoration: none;
+        float: left;
+    }
+
+    &__user-text {
+        @include fontSizeNav();
+        float: right;
+    }
+
+    &__main {
+        margin: 14rem 0 0 0;
+    }
+
+    &__covid-text {
+        padding-top: 10rem;
+        font-size: 9rem;
+        text-transform: uppercase;
+        color: $secondary-color;
+    }
+
+    &__description-text {
+        @include fontSizeNav();
+    }
+
+}

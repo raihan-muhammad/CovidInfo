@@ -1,0 +1,35 @@
+{
+  "name": "submisson_corona_api_raihan",
+  "version": "1.0.0",
+  "description": "This project for submisson in dicoding dot com",
+  "main": "index.js",
+  "scripts": {
+    "sass-compile": "node-sass sass/main.scss src/css/style.css -w",
+    "compile-to-css": "node-sass sass/main.scss src/css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b \"last 10 version\" src/css/style.comp.css -o src/css/style.prefix.css ",
+    "compress": "node-sass src/css/style.prefix.css src/css/style.css --output-style compressed",
+    "production-sass": "npm-run-all compile-to-css prefix compress",
+    "production-js": "webpack"
+  },
+  "author": "Raihan Muhammad",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "autoprefixer": "^9.7.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^4.0.4",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "remixicon": "^2.3.0",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.5"
+  }
+}

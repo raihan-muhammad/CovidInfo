@@ -1,0 +1,287 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 10px
+}
+
+body {
+    font-family: "poppins";
+    overflow-x: hidden
+}
+
+@-webkit-keyframes bawah {
+    0% {
+        transform: translateY(10rem);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes bawah {
+    0% {
+        transform: translateY(10rem);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 8px
+    }
+
+    .header {
+        height: 70rem
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 8px
+    }
+
+    .header {
+        padding: 2rem 5rem;
+        height: 55rem
+    }
+
+    .header__covid-text {
+        font-size: 6rem
+    }
+
+    .main {
+        padding: 2rem 5rem
+    }
+
+    .main__flag-country {
+        margin: 5rem 0 0 5.5rem
+    }
+
+    .main__corona-info {
+        padding: 2rem 0
+    }
+
+    .main__indo-text {
+        margin-left: 2.6rem
+    }
+
+    .main__emot {
+        padding: 0
+    }
+
+    .main__emot__react-icon {
+        width: 4rem;
+        height: 4rem
+    }
+}
+
+.clear-left {
+    clear: left
+}
+
+.clear-right {
+    clear: right
+}
+
+.clear-both {
+    clear: both
+}
+
+.mt-md {
+    margin-top: 5.4rem
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.6rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: .2s all;
+    position: relative;
+    -webkit-animation: bawah 1.5s;
+    animation: bawah 1.5s;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer
+}
+
+.btn:hover {
+    transform: translateY(5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3)
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3)
+}
+
+.btn:focus {
+    outline: none
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s all;
+    opacity: 1
+}
+
+.btn:hover::after {
+    transform: scale(1.4, 1.7);
+    opacity: 0
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #28b7ee
+}
+
+.btn-primary::after {
+    border-radius: 10rem;
+    z-index: -1;
+    background: #ffffff
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba(41, 136, 255, 0.8), rgba(39, 189, 236, 0.8));
+    padding: 2rem 10rem
+}
+
+.header__primary-text {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    float: left
+}
+
+.header__user-text {
+    font-size: 1.8rem;
+    color: #ffffff;
+    float: right
+}
+
+.header__main {
+    margin: 14rem 0 0 0
+}
+
+.header__covid-text {
+    padding-top: 10rem;
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: #ffffff
+}
+
+.header__description-text {
+    font-size: 1.8rem;
+    color: #ffffff
+}
+
+.main {
+    padding: 2rem 10rem
+}
+
+.main__country-text {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: #2988FF
+}
+
+.main__card-info {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right bottom, rgba(41, 136, 255, 0.8), rgba(39, 189, 236, 0.8));
+    border-radius: 20px
+}
+
+.main__flag-country {
+    width: 30rem;
+    height: 30rem;
+    margin: 10rem 0 10rem 7rem;
+    float: left
+}
+
+.main__flag-country img {
+    width: 100%;
+    height: 100%
+}
+
+.main__corona-info {
+    float: left;
+    padding: 8rem 3rem 3rem 1rem
+}
+
+.main__indo-text {
+    font-size: 3.7rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: 600;
+    padding-left: 5.3rem;
+    padding-top: 5rem
+}
+
+.main__kasus-text {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 1.2rem 0;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 100;
+    padding-left: 5.3rem
+}
+
+.main__emot {
+    padding: 4rem 0 0 0
+}
+
+.main__emot-react {
+    color: #ffffff;
+    float: left;
+    margin: 0 5rem
+}
+
+.main__emot-react-icon {
+    width: 100px;
+    height: 100px
+}
+
+.main__text-angka {
+    text-align: center;
+    font-size: 2rem
+}
+
+.footer {
+    width: 100%;
+    height: 5rem;
+    margin-top: 9rem;
+    background: linear-gradient(to right bottom, rgba(41, 136, 255, 0.8), rgba(39, 189, 236, 0.8))
+}
+
+.footer__text-copy {
+    color: #ffffff;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.4rem
+}
